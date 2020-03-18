@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "466298534089",
+    "firebase_url": "https://matrix-mar8-adao.firebaseio.com",
+    "project_id": "matrix-mar8-adao",
+    "storage_bucket": "matrix-mar8-adao.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466298534089:android:93991be6ef7b447dbeb518",
+        "android_client_info": {
+          "package_name": "project.dora.matrix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466298534089-7asgv7bc9t7eaf6eu38sm33hp0tfdc40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "project.dora.matrix",
+            "certificate_hash": "911eef496c4a1d69ee8877142b86313eda25d8ec"
+          }
+        },
+        {
+          "client_id": "466298534089-pl0bljc8ma3299pbsj8b5g4upt0pgc5j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCybR4ff5autTfQX6SgwZ4YKc2ufuAu_88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466298534089-pl0bljc8ma3299pbsj8b5g4upt0pgc5j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
