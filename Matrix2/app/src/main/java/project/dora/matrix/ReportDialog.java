@@ -6,6 +6,7 @@ import android.app.Dialog;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Bitmap;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -63,6 +64,11 @@ public class ReportDialog extends Dialog {
         mDialogCallBack = dialogCallBack;
     }
 
+    public void updateImage(Bitmap bitmap) {
+        mImageCamera.setImageBitmap(bitmap);
+    }
+
+
 
     private void setUpEventSpecs(final View dialogView) {
         mImageCamera = (ImageView) dialogView.findViewById(R.id.event_camera_img);
@@ -79,6 +85,19 @@ public class ReportDialog extends Dialog {
 
             }
         });
+        mBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mViewSwitcher.showPrevious();
+            }
+        });
+        mImageCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mDialogCallBack.startCamera();
+            }
+        });
+
 
     }
 
