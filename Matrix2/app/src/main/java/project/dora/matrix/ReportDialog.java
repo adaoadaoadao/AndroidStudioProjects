@@ -47,6 +47,7 @@ public class ReportDialog extends Dialog {
 
     private ViewSwitcher mViewSwitcher;
     private String mEventType;
+    private String mPrefillText;
 
     private ImageView mImageCamera;
     private Button mBackButton;
@@ -212,6 +213,26 @@ public class ReportDialog extends Dialog {
             mEventTypeImg.setImageDrawable(ContextCompat.getDrawable(getContext(),Config.trafficMap.get(mEventType)));
         }
     }
+
+    public void setVocieInfor(String event_type, String prefillText) {
+        mEventType = event_type;
+        mPrefillText = prefillText;
+
+    }
+
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        if (mEventType != null) {
+            showNextViewSwitcher(mEventType);
+        }
+        if (mPrefillText != null) {
+            mCommentEditText.setText(mPrefillText);
+        }
+    }
+
 
 
 
